@@ -15,10 +15,10 @@ public class Main {
         phone1.listMessages("0742409405");
         phone1.viewHistory();
         MobilePhone mob1 = (MobilePhone) phone1;
-        System.out.println(mob1.getBatteryLife());
+        System.out.println(mob1.getAvailableBatteryLife());
         mob1.sendMessage("0742409403", "Fourth message");
         mob1.sendMessage("0789098765", "Fifth message");
-        System.out.println(mob1.getBatteryLife());
+        System.out.println(mob1.getAvailableBatteryLife());
         System.out.println("------------------------------------------------------------------------------------");
 
 
@@ -34,7 +34,7 @@ public class Main {
         mob2.listContacts();
         mob2.listMessages("0710210222");
         mob2.viewHistory();
-        System.out.println(mob2.getBatteryLife());
+        System.out.println(mob2.getAvailableBatteryLife());
         System.out.println("--------------------------------------------------------------------");
 
 
@@ -50,7 +50,7 @@ public class Main {
         mob3.listContacts();
         mob3.listMessages("0789987654");
         mob3.viewHistory();
-        System.out.println(mob3.getBatteryLife());
+        System.out.println(mob3.getAvailableBatteryLife());
         System.out.println("--------------------------------------------------");
 
 
@@ -68,7 +68,7 @@ public class Main {
         mob4.listMessages("0765432145");
         mob4.listMessages("0789098723");
         mob4.viewHistory();
-        System.out.println(mob4.getBatteryLife());
+        System.out.println(mob4.getAvailableBatteryLife());
 
     }
 }

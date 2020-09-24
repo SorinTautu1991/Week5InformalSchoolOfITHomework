@@ -36,7 +36,7 @@ public class IphoneSE extends Apple {
     }
 
     @Override
-    public double getBatteryLife() {
+    public double getAvailableBatteryLife() {
         System.out.print("Available battery life(hours) for IphoneSE: ");
         return Math.round(super.getBatteryLife() - getBatteryConsumption());
     }

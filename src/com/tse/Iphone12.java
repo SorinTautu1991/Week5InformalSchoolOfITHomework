@@ -36,7 +36,7 @@ public class Iphone12 extends Apple {
     }
 
     @Override
-    public double getBatteryLife() {
+    public double getAvailableBatteryLife() {
         System.out.println("Available battery life(hours) for Iphone12: ");
         return Math.round(super.getBatteryLife() - getBatteryConsumption());
     }

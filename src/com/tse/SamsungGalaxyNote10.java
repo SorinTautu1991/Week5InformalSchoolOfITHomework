@@ -31,7 +31,7 @@ public class SamsungGalaxyNote10 extends Samsung {
     }
 
     @Override
-    public double getBatteryLife() {
+    public double getAvailableBatteryLife() {
         System.out.print("Available battery life(hours) for SamsungGalaxyNote10: ");
         return Math.round(super.getBatteryLife() - getBatteryConsumption());
     }

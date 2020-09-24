@@ -36,7 +36,7 @@ public class SamsungGalaxyS12 extends Samsung{
     }
 
     @Override
-    public double getBatteryLife() {
+    public double getAvailableBatteryLife() {
         System.out.print("Available battery life(hours) for SamsungGalaxyS12: ");
         return Math.round(super.getBatteryLife() - getBatteryConsumption());
     }

@@ -27,6 +27,8 @@ public abstract class MobilePhone implements Phone {
         this.batteryConsumption = 0;
     }
 
+    protected abstract double getAvailableBatteryLife();
+
     @Override
     public void addContact(int nr, String phoneNumber, String firstName, String lastName) {
         contacts.add(new Contact(nr, phoneNumber, firstName, lastName));
